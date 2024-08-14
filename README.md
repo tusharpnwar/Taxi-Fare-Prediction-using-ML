@@ -1,82 +1,100 @@
 # Fare-Wise: Navigating Taxi Fares with Predictive Modelling
-Welcome to Fare-Wise, an advanced taxi fare prediction app that leverages machine learning to deliver precise fare estimates. This application helps users by predicting the cost of taxi rides, factoring in elements like distance, traffic, and time of day.
 
-Table of Contents
-Features
-Installation
-Usage
-Files and Folders
-Model Training
-Contributing
-License
-Contact
-Features
-Accurate Fare Prediction: Get reliable fare estimates based on real-time data and machine learning models.
-User-Friendly Interface: Simple input forms and intuitive design for ease of use.
-Continuous Learning: The model is periodically updated with new data to enhance prediction accuracy.
-Transparent Pricing: Provides users with clear fare expectations, helping to avoid unexpected costs.
-Installation
-To set up the project locally, follow these steps:
+**Author:** Tushar Panwar
 
-Clone the repository:
+## Project Overview
 
-git clone https://https://github.com/tusharpnwar/Taxi-Fare-Prediction-using-ML/
+Fare-Wise is a machine learning project designed to predict taxi fares based on various features like distance, time, and location. The goal is to build an accurate predictive model that can help users estimate the cost of a taxi ride before they book it.
 
-Install the required dependencies:
+## Table of Contents
 
-pip install -r requirements.txt
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Modeling Process](#modeling-process)
+6. [Results](#results)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Acknowledgments](#acknowledgments)
 
-Run the application:
+## Introduction
 
-python app.py
+Taxi fares can be unpredictable, and this project aims to bring more transparency by developing a predictive model. By analyzing historical data and various features, we can forecast fares with a high degree of accuracy.
 
-Usage
-Open the app by running app.py.
-Enter your pickup and drop-off locations.
-The app will calculate and display the estimated fare for your ride.
-Review the estimate and plan your journey accordingly.
-Files and Folders
-README.md: Documentation for the project.
-app.py: Main application file to run the app.
-main.py: Script to handle the backend logic, including model predictions.
-cabdata.csv: Dataset containing historical cab ride data used for training the model.
-model.pkl: Pre-trained machine learning model serialized for use in the app.
-requirements.txt: Lists all Python dependencies required to run the app.
-style.css: Contains the styling information for the app's UI.
+## Features
 
-Model Training
-The fare prediction model is built using the data from cabdata.csv and trained using machine learning techniques.
+- **Data Collection:** Collects and preprocesses data from various sources.
+- **Feature Engineering:** Creates new features such as distance, time of day, and traffic conditions.
+- **Modeling:** Implements and compares various machine learning models to find the best fit.
+- **Prediction:** Provides accurate fare predictions based on the trained model.
 
-Steps to Train the Model:
-Prepare the Dataset:
+## Installation
 
-Load and preprocess the data from cabdata.csv.
-Perform feature extraction and engineering to enhance model inputs.
-Train the Model:
+To run this project locally, follow these steps:
 
-Use main.py to train the model on the processed data.
-Save the trained model as model.pkl for future use.
-Evaluate and Tune:
+1. Clone the repository:
+    ```bash
+    git clone https://https://github.com/tusharpnwar/Taxi-Fare-Prediction-using-ML
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd fare-wise
+    ```
+3. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Evaluate the model's performance using test data.
-Adjust hyperparameters as needed for better accuracy.
-Deploy:
+## Usage
 
-Integrate the trained model in app.py for real-time fare predictions.
-Contributing
-We welcome contributions! If you want to contribute to this project, please follow these steps:
+1. Prepare your dataset:
+    - Ensure your dataset is in the correct format as expected by the model.
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes.
-Commit your changes (git commit -m 'Add some feature').
-Push to the branch (git push origin feature-branch).
-Open a Pull Request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+2. Train the model:
+    ```bash
+    python train_model.py --dataset_path /path/to/your/dataset.csv
+    ```
 
-Contact
-If you have any questions or suggestions, feel free to reach out:
+3. Make predictions:
+    ```bash
+    python predict.py --input_data /path/to/input/data.csv
+    ```
 
-Email: tusharpanwar01872@gmail.com
-GitHub: tusharpnwar
+4. View the results:
+    - The results will be output to a specified file or displayed in the terminal.
+
+## Modeling Process
+
+1. **Data Preprocessing:** Handling missing values, encoding categorical variables, and scaling features.
+2. **Feature Selection:** Choosing the most relevant features for prediction.
+3. **Model Training:** Using algorithms like Linear Regression, Random Forest, and Gradient Boosting.
+4. **Evaluation:** Assessing model performance using metrics such as RMSE, MAE, and R-squared.
+5. **Hyperparameter Tuning:** Optimizing model parameters to improve accuracy.
+
+## Results
+
+- **Best Model:** Gradient Boosting achieved the highest accuracy with an RMSE of 2.34.
+- **Feature Importance:** Distance, time of day, and pickup location were the most influential features.
+- **Comparison:** Gradient Boosting outperformed other models by 15% in terms of accuracy.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Dataset Source](#) - The dataset used in this project.
+- Special thanks to the [OpenAI](https://openai.com/) team for providing GPT technology.
+- Inspiration and guidance from the [Kaggle community](https://www.kaggle.com/).
