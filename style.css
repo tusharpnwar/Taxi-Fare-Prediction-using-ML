@@ -1,0 +1,69 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+*{
+  font-family: 'Anta', sans-serif;
+}
+/* Main Page Title */
+h1 {
+    font-size: 48px;
+    color: #6ab04c; /* Light green color */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Sidebar Title */
+h2 {
+    font-size: 30px;
+    color: #6ab04c; /* Light green color */
+}
+
+/* Sidebar Controls */
+.stSidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Upload File Button */
+.stFileUploader > div > div {
+    border-color: #5a98d7 !important;
+    border-radius: 5px;
+    background-color: #5a98d7 !important;
+}
+
+/* Interactive Controls */
+.stWidget.stNumberInput > div > div {
+    border-color: #5a98d7 !important;
+}
+
+.stButton>button {
+    background-color: #5a98d7 !important;
+    color: white !important;
+}
+
+/* Subheader */
+.stSubheader {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Main Page Content */
+.stContent {
+    padding: 20px;
+}
+
+/* Plotly Charts */
+.stPlotlyChart {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.stFooter {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-top: 30px;
+}
+

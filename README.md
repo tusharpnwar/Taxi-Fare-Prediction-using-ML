@@ -1,4 +1,2 @@
-# Taxi-Fare-Prediction-using-ML
-Fare-Wise is an intelligent taxi fare prediction app designed to provide accurate fare estimates for taxi rides. Leveraging advanced machine learning algorithms, the app analyzes various factors such as distance, traffic conditions, time of day, and location to predict the cost of a taxi ride before it begins. This ensures that users have a clear expectation of fare costs, helping them make informed decisions when planning their travel.
-
-The app is user-friendly, allowing users to input their pickup and drop-off locations, and instantly receive an estimated fare. The underlying machine learning model is continuously refined using real-world data, ensuring that the predictions remain accurate and reliable. Fare-Wise not only enhances transparency but also contributes to a more efficient and stress-free travel experience.
+# taxi-fair-prediction
+ml project using streamlit 
